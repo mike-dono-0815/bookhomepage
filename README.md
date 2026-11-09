@@ -16,26 +16,100 @@ JS, ready for GitHub Pages.
   (unlisted URL, excluded in robots.txt)
 - `privacy.html`, `imprint.html`, `404.html`, `CNAME`, `robots.txt`, `sitemap.xml`
 
-## Before launch
+## Status (9 November 2026)
 
-1. **Author photo**: save as `assets/img/author.jpg` (4:5) and swap the placeholder
-   in the `#author` section of `index.html` (instructions in the HTML comment).
-2. **Imprint and privacy**: fill the `{{...}}` placeholders.
-3. **Substack welcome email**: Substack > Settings > Emails > Welcome email for
+The site is live at https://theleadershipfork.com.
+
+Done:
+
+- Author photo in place (`assets/img/author.jpg`, `.webp`).
+- Git repo set up and connected to GitHub (`mike-dono-0815/bookhomepage`, branch `main`).
+- GitHub Pages enabled; domain `theleadershipfork.com` (bought at Porkbun)
+  points to it, HTTPS works, `www` and `http://` redirect to `https://theleadershipfork.com/`.
+- Google Search Console: domain property verified (TXT record), sitemap submitted,
+  indexing requested for the homepage.
+- Search tweaks for the name and the hashtag `#TheLeadershipFork` (see below).
+- Imprint and privacy filled in for Germany (see below).
+- Decision: **no Google Analytics.** It sets cookies and would need a consent
+  banner under German law (TDDDG § 25, GDPR). The site stays cookie free.
+
+Still open:
+
+1. **Email**: make sure `book@theleadershipfork.com` receives mail
+   (Porkbun > Domain Management > Email Forwarding; send a test).
+2. **Second contact channel** in the imprint (usually a phone number), which
+   German law expects besides email.
+3. **Legal check** of `imprint.html` and `privacy.html` (lawyer or eRecht24).
+4. **Substack welcome email**: Substack > Settings > Emails > Welcome email for
    free subscribers. Add the chapter link:
    `https://theleadershipfork.com/read/the-leadership-fork-chapter-one-bcd841da.pdf`
-4. **Chapter PDF**: currently a copy of `../chapter1.pdf`. Re-copy it to the same
-   filename whenever the chapter changes.
+5. **Chapter PDF**: currently a copy of the book's `chapter1.pdf`. Re-copy it to
+   the same filename whenever the chapter changes.
+6. **Hashtag**: use `#TheLeadershipFork` in LinkedIn, Instagram and TikTok posts and
+   link theleadershipfork.com from all profiles. Links from these profiles help
+   Google rank the site for the name.
 
 ## Deploy (GitHub Pages)
 
-1. Repo: `mike-dono-0815/bookhomepage`. Push the contents of this folder to `main`.
-2. Repo > Settings > Pages > Deploy from branch `main`, folder `/ (root)`.
+Repo: https://github.com/mike-dono-0815/bookhomepage (public). Every push to
+`main` goes live within about a minute:
+
+```
+git add -A
+git commit -m "Describe the change"
+git push
+```
+
+One time setup (already done):
+
+1. Repo > Settings > Pages > Deploy from branch `main`, folder `/ (root)`.
    The `CNAME` file sets the custom domain.
-3. At your domain registrar, add DNS records:
-   - `A` records for `@`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-   - `CNAME` for `www`: `mike-dono-0815.github.io`
-4. Once the certificate is issued, tick **Enforce HTTPS**.
+2. Porkbun > Domain Management > theleadershipfork.com > DNS. Porkbun's default
+   parking records (`ALIAS` on the bare domain, `CNAME` for `*`) removed, then added:
+
+   | Type  | Host  | Answer                     |
+   |-------|-------|----------------------------|
+   | A     | empty | 185.199.108.153            |
+   | A     | empty | 185.199.109.153            |
+   | A     | empty | 185.199.110.153            |
+   | A     | empty | 185.199.111.153            |
+   | CNAME | www   | mike-dono-0815.github.io   |
+   | TXT   | empty | `google-site-verification=...` (keep it, Search Console needs it) |
+
+   Optional IPv6: four `AAAA` records, host empty, `2606:50c0:8000::153` to
+   `2606:50c0:8003::153`.
+3. Repo > Settings > Pages > **Enforce HTTPS** ticked once the certificate was issued.
+
+Because the repo is public, everything in it can be seen, including the
+Chapter 1 PDF and the imprint address.
+
+## Search engines and the hashtag
+
+- **Google Search Console** (https://search.google.com/search-console), property
+  `theleadershipfork.com` (type "Domain"). Sitemap submitted as the full URL
+  `https://theleadershipfork.com/sitemap.xml` (domain properties need the full URL).
+  The **Performance** report shows which searches find the site, without cookies.
+  Check if the page is indexed by searching for `site:theleadershipfork.com` on Google.
+- Google does not search by hashtags, so the page ties the names together instead:
+  - JSON-LD in `index.html`: a `WebSite` entry with the alternate names
+    `TheLeadershipFork`, `#TheLeadershipFork` and `theleadershipfork.com`, plus
+    `alternateName` and `keywords` on the `Book` entry.
+  - Visible line in the Connect section: "Share your fork moments with
+    #TheLeadershipFork".
+  - `robots` meta (`index, follow, max-image-preview:large`) and `og:locale`.
+- `sitemap.xml` has a `lastmod` date. Update it after bigger content changes.
+- `robots.txt` keeps `/read/` (the chapter PDF) out of search results.
+
+## Legal pages (Germany)
+
+- `imprint.html`: information according to § 5 DDG. Michael Donoser,
+  Sulzbergweg 11, 12107 Berlin, Germany, `book@theleadershipfork.com`. Also names
+  the person responsible for content under § 18 (2) MStV. (The template first
+  cited Austrian law. That was replaced.)
+- `privacy.html`: last updated 9 November 2026. Names the Berlin data protection
+  authority (Berliner Beauftragte für Datenschutz und Informationsfreiheit). It
+  states that the site sets no cookies and runs no analytics. If analytics are
+  ever added, update this page.
 
 ## Updating the excerpt
 
