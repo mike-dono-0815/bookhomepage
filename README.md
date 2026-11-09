@@ -29,7 +29,7 @@ JS, ready for GitHub Pages.
 
 ## Deploy (GitHub Pages)
 
-1. Create a repo `theleadershipfork` and push the contents of this folder to `main`.
+1. Repo: `mike-dono-0815/bookhomepage`. Push the contents of this folder to `main`.
 2. Repo > Settings > Pages > Deploy from branch `main`, folder `/ (root)`.
    The `CNAME` file sets the custom domain.
 3. At your domain registrar, add DNS records:
