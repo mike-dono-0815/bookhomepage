@@ -45,11 +45,11 @@ Based on the elayadesign landing-page-design skill
 ## Page structure, top to bottom
 
 1. **Floating nav**: The Idea, Chapters, Read the Opening, Author, FAQ, plus a
-   "Get Chapter 1" button. Full-height menu on phones.
+   "Subscribe" button. Full-height menu on phones.
 2. **Hero**: "Same crisis. Same people. One team unravels. One grows." The book
    cover with a round yellow "Coming 2027" sticker on its lower right. The main
-   button "Get Chapter 1 free" with the note "Free when you join the newsletter.
-   Unsubscribe anytime." A one-line author credit with a round avatar.
+   button "Subscribe and get Chapter 1 free" with the note "One leadership story
+   every two weeks. Free, unsubscribe anytime." A one-line author credit with a round avatar.
 3. **How the book works**: "Five stories, two paths each". One blue and orange
    road drawn across the section splits at the fork; its three stops mark The
    situation, The fork and The mechanisms. On phones it becomes a vertical rail.
@@ -66,8 +66,9 @@ Based on the elayadesign landing-page-design skill
    animation (StPageFlip, MIT). The closed cover is centred and slides into the
    two-page position as the book opens. "Read larger" opens a zoom view. A plain
    text version sits collapsed underneath for screen readers and search engines.
-8. **Signup**: dark panel with the Substack embed. Benefits: regular leadership
-   lessons, the rest of Chapter 1, all 11 Chapter 1 mechanisms, first to hear the
+8. **Signup**: dark panel with the Substack embed, led by the newsletter: "One
+   leadership fork, every two weeks". Benefits: the biweekly fork and its
+   mechanism, Chapter 1 as the welcome gift, all 11 Chapter 1 mechanisms, first to hear the
    release date, and a "Coming soon" team check that ranks the mechanisms to
    start with.
 9. **About the author**: photo (256 px wide on desktop), three stats (12 years,
@@ -87,8 +88,8 @@ image, and JSON-LD (Book with the author's profile links, plus FAQPage).
 
 ## Key decisions
 
-- **Newsletter first.** Every Chapter 1 button carries a short note saying it is
-  free with the newsletter, so nobody is surprised by the signup. The newsletter
+- **Newsletter first.** Buttons say "Subscribe" first and offer Chapter 1 as the
+  welcome gift, so nobody is surprised by the signup. The newsletter
   is presented as ongoing leadership lessons, not only book news.
 - **Show the real book.** The preview uses rendered page images, not retyped
   text, so visitors see the book exactly as it will look in print.
@@ -96,7 +97,8 @@ image, and JSON-LD (Book with the author's profile links, plus FAQPage).
   5 situations, 5 stories, 2 teams, 11 mechanisms per chapter, 55 in total.
 - **No assumed knowledge.** Read top to bottom, each section introduces what the
   next one relies on (stories, Team Alpha and Team Beta, mechanisms).
-- **Honest promises.** No newsletter frequency is stated, the release date is
+- **Honest promises.** The newsletter promises one fork every two weeks (keep
+  that rhythm or change the copy), the release date is
   "as soon as it is set", and the team check is marked "Coming soon".
 - **Quotes from the book are verbatim** or carry no book attribution.
 
