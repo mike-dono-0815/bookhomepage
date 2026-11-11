@@ -519,8 +519,6 @@ a { color: inherit; }
 .text-version > summary::-webkit-details-marker { display: none; }
 .text-version[open] > summary { margin-bottom: var(--s-300); }
 
-.cliffhanger { margin-top: var(--s-600); text-align: center; }
-.cliffhanger p { max-width: 520px; margin: var(--s-100) auto var(--s-300); }
 
 /* ---------- Signup ---------- */
 .signup { background: var(--ink); color: #fff; border-radius: var(--r-3xl); padding: var(--s-500) var(--s-300); display: grid; gap: var(--s-600); overflow: hidden; position: relative; }
@@ -631,7 +629,7 @@ a { color: inherit; }
 /* Note under every Chapter 1 button: says how the free chapter is delivered */
 .cta-note { display: flex; align-items: center; gap: var(--s-75); margin-top: var(--s-200); color: var(--ink-2); }
 .cta-note svg { width: 16px; height: 16px; flex: none; color: var(--orange-ink); }
-.cliffhanger .cta-note, .final .cta-note { justify-content: center; max-width: none; margin: var(--s-200) auto 0; }
+.final .cta-note { justify-content: center; max-width: none; margin: var(--s-200) auto 0; }
 .page-end-inner .caption-2 { margin-top: calc(var(--s-75) * -1); }
 
 /* ---------- Footer ---------- */
