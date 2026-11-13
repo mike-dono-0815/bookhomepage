@@ -56,10 +56,9 @@ Based on the elayadesign landing-page-design skill
    thrives." One blue and orange
    road drawn across the section splits at the fork; its three stops mark The
    situation, The fork and The mechanisms. On phones it becomes a vertical rail.
-4. **Tagline quote**: "The difference is rarely talent. It is small, almost
-   invisible choices that harden into habits." Garamond italic between two gold
-   rules, fork icon on the top rule, credited to Michael Donoser only (the wording
-   is not a verbatim book quote).
+4. **Tagline quote**: "When the playbook stops working, teams fall back on their
+   habits." Garamond italic between two gold rules, fork icon on the top rule,
+   credited to Michael Donoser, from the introduction (verbatim book quote).
 5. **Why now**: "As AI makes expertise cheaper, habits matter more", then four
    benefit cards.
 6. **Chapters**: five cards. Each has a situation tag, the title, a one or two
@@ -79,8 +78,8 @@ Based on the elayadesign landing-page-design skill
    20+ products, billions in customer impact), a two-paragraph bio, and the
    verbatim Introduction quote "I do not share them as someone who has mastered
    them…" in the same Garamond and gold style as the tagline.
-10. **FAQ**: eight questions, including what subscribers get, whether the
-    stories are true, and team copies for managers.
+10. **FAQ**: seven questions, including what subscribers get, whether the
+    stories are true, and why AI makes the book matter now.
 11. **Final call to action**: "See which path your team is on".
 12. **Connect**: a navy band with "Follow Michael for leadership lessons", a round
     photo with the book cover tucked in, and links to LinkedIn, Instagram, TikTok
