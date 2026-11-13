@@ -46,18 +46,22 @@ Based on the elayadesign landing-page-design skill
 
 1. **Floating nav**: The Idea, Chapters, Read the Opening, Author, FAQ, plus a
    "Subscribe" button. Full-height menu on phones.
-2. **Hero**: "Same crisis. Same people. One team unravels. One grows." The book
+2. **Hero**: "Talent is rarely the problem. Habits are." A sub line naming the
+   problem and the 55 mechanisms, then a reader line (engineers, scientists,
+   product and design people, tech leads, new managers). The book
    cover with a round yellow "Coming 2027" sticker on its lower right. The main
    button "Subscribe and get Chapter 1 free" with the note "One leadership story
    every two weeks. Free, unsubscribe anytime." A one-line author credit with a round avatar.
-3. **How the book works**: "Five stories, two paths each". One blue and orange
+3. **How the book works**: "Same crisis. Same people. One team unravels. One
+   thrives." One blue and orange
    road drawn across the section splits at the fork; its three stops mark The
    situation, The fork and The mechanisms. On phones it becomes a vertical rail.
 4. **Tagline quote**: "The difference is rarely talent. It is small, almost
    invisible choices that harden into habits." Garamond italic between two gold
    rules, fork icon on the top rule, credited to Michael Donoser only (the wording
    is not a verbatim book quote).
-5. **Why this book**: four benefit cards.
+5. **Why now**: "As AI makes expertise cheaper, habits matter more", then four
+   benefit cards.
 6. **Chapters**: five cards. Each has a situation tag, the title, a one or two
    sentence story hook (setup only, no spoilers), the theme, and three real
    mechanism titles under "11 mechanisms, including", plus "+ 8 more".
@@ -75,8 +79,8 @@ Based on the elayadesign landing-page-design skill
    20+ products, billions in customer impact), a two-paragraph bio, and the
    verbatim Introduction quote "I do not share them as someone who has mastered
    them…" in the same Garamond and gold style as the tagline.
-10. **FAQ**: seven questions, including what subscribers get and whether the
-    stories are true.
+10. **FAQ**: eight questions, including what subscribers get, whether the
+    stories are true, and team copies for managers.
 11. **Final call to action**: "See which path your team is on".
 12. **Connect**: a navy band with "Follow Michael for leadership lessons", a round
     photo with the book cover tucked in, and links to LinkedIn, Instagram, TikTok
